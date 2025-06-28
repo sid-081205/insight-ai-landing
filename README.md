@@ -1,6 +1,6 @@
 # insight ai landing page
 
-a sleek landing page for insight ai - the platform that replaces traditional mobile game ads with engaging ai-powered survey conversations.
+a landing page for insight ai - the platform that replaces traditional mobile game ads with engaging ai-powered survey conversations.
 
 ## what it is
 
@@ -48,16 +48,6 @@ npm run build
 ```bash
 npm run build
 # upload dist/ folder to any static host
-```
-
-## project structure
-
-```
-src/
-├── components/     # reusable ui components
-├── pages/         # main page components
-├── index.css      # global styles + tailwind
-└── main.tsx       # app entry point
 ```
 
 built for developers who want better monetization without annoying their players.
