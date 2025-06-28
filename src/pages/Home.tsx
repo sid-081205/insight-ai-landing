@@ -279,68 +279,30 @@ const Home = () => {
             ))}
           </div>
 
-          {/* ElevenLabs Demo */}
-          <div className="bg-gradient-to-r from-cozy-600 to-sage-600 rounded-2xl p-8 text-white">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">hear the difference</h3>
-                <p className="text-cozy-100 mb-6">
-                  elevenlabs' neural voice synthesis creates characters that sound completely human. 
-                  players engage naturally because the voices feel real and emotionally authentic.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
-                    <span className="text-cozy-100">emotional range and expression</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
-                    <span className="text-cozy-100">contextual speech patterns</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
-                    <span className="text-cozy-100">real-time voice generation</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
-                    <span className="text-cozy-100">multilingual support</span>
-                  </div>
-                </div>
+          {/* ElevenLabs Benefits */}
+          <div className="bg-gradient-to-r from-cozy-600 to-sage-600 rounded-2xl p-8 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">why elevenlabs makes the difference</h3>
+            <p className="text-cozy-100 mb-8 max-w-3xl mx-auto">
+              elevenlabs' neural voice synthesis creates characters that sound completely human. 
+              players engage naturally because the voices feel real and emotionally authentic, 
+              making survey interactions feel like natural game dialogue.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-cozy-200 mb-1">29</div>
+                <div className="text-sm text-cozy-100">languages supported</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-center mb-4">
-                  <h4 className="font-semibold text-lg mb-2">sample character voices</h4>
-                  <p className="text-sm text-cozy-200">click to hear elevenlabs ai in action</p>
-                </div>
-                <div className="space-y-3">
-                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">zara the wise owl</div>
-                      <div className="text-sm text-cozy-200">warm, knowledgeable guide</div>
-                    </div>
-                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
-                      <Volume2 className="h-5 w-5" />
-                    </button>
-                  </div>
-                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">max the mechanic</div>
-                      <div className="text-sm text-cozy-200">energetic, helpful expert</div>
-                    </div>
-                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
-                      <Volume2 className="h-5 w-5" />
-                    </button>
-                  </div>
-                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
-                    <div>
-                      <div className="font-medium">luna the fairy</div>
-                      <div className="text-sm text-cozy-200">playful, magical companion</div>
-                    </div>
-                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
-                      <Volume2 className="h-5 w-5" />
-                    </button>
-                  </div>
-                </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-cozy-200 mb-1">real-time</div>
+                <div className="text-sm text-cozy-100">voice generation</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-cozy-200 mb-1">emotional</div>
+                <div className="text-sm text-cozy-100">voice modulation</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-cozy-200 mb-1">studio</div>
+                <div className="text-sm text-cozy-100">quality output</div>
               </div>
             </div>
           </div>
