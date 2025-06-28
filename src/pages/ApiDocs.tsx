@@ -3,13 +3,13 @@ import { Code, Key, Zap, Shield } from 'lucide-react'
 
 const ApiDocs = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold gradient-text mb-4">
             api documentation
           </h1>
-          <p className="text-xl text-midnight-300">
+          <p className="text-xl text-gray-600">
             integrate insight ai into your game in minutes
           </p>
         </div>
@@ -18,10 +18,10 @@ const ApiDocs = () => {
           {/* Getting Started */}
           <section className="glass-effect rounded-2xl p-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Zap className="h-6 w-6 text-electric-400" />
-              <h2 className="text-2xl font-semibold text-midnight-100">getting started</h2>
+              <Zap className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold text-gray-900">getting started</h2>
             </div>
-            <p className="text-midnight-300 mb-6">
+            <p className="text-gray-600 mb-6">
               our rest api makes it easy to integrate ai survey experiences into any game engine.
             </p>
             <div className="code-block">
@@ -44,10 +44,10 @@ curl -X POST https://api.insight-ai.com/v1/survey/start \\
           {/* Authentication */}
           <section className="glass-effect rounded-2xl p-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Key className="h-6 w-6 text-electric-400" />
-              <h2 className="text-2xl font-semibold text-midnight-100">authentication</h2>
+              <Key className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold text-gray-900">authentication</h2>
             </div>
-            <p className="text-midnight-300 mb-6">
+            <p className="text-gray-600 mb-6">
               all api requests require an api key in the authorization header.
             </p>
             <div className="code-block">
@@ -61,13 +61,13 @@ curl -X POST https://api.insight-ai.com/v1/survey/start \\
           {/* Core Endpoints */}
           <section className="glass-effect rounded-2xl p-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Code className="h-6 w-6 text-electric-400" />
-              <h2 className="text-2xl font-semibold text-midnight-100">core endpoints</h2>
+              <Code className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold text-gray-900">core endpoints</h2>
             </div>
             
             <div className="space-y-8">
               <div>
-                <h3 className="text-lg font-semibold text-midnight-100 mb-3">start survey session</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">start survey session</h3>
                 <div className="code-block">
                   <pre>{`POST /v1/survey/start
 
@@ -103,7 +103,7 @@ response:
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-midnight-100 mb-3">handle player response</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">handle player response</h3>
                 <div className="code-block">
                   <pre>{`POST /v1/survey/respond
 
@@ -129,7 +129,7 @@ response:
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-midnight-100 mb-3">complete survey</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">complete survey</h3>
                 <div className="code-block">
                   <pre>{`GET /v1/survey/complete/:session_id
 
@@ -153,13 +153,13 @@ response:
           {/* SDK Examples */}
           <section className="glass-effect rounded-2xl p-8">
             <div className="flex items-center space-x-3 mb-6">
-              <Shield className="h-6 w-6 text-electric-400" />
-              <h2 className="text-2xl font-semibold text-midnight-100">sdk examples</h2>
+              <Shield className="h-6 w-6 text-blue-500" />
+              <h2 className="text-2xl font-semibold text-gray-900">sdk examples</h2>
             </div>
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-midnight-100 mb-3">unity c#</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">unity c#</h3>
                 <div className="code-block">
                   <pre>{`using InsightAI;
 
@@ -189,7 +189,7 @@ public class RewardManager : MonoBehaviour
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-midnight-100 mb-3">javascript/typescript</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">javascript/typescript</h3>
                 <div className="code-block">
                   <pre>{`import { InsightAI } from '@insight-ai/game-sdk';
 
@@ -216,12 +216,12 @@ async function showRewardSurvey(playerId: string) {
           </section>
 
           {/* Best Practices */}
-          <section className="bg-midnight-800/50 rounded-2xl p-8">
-            <h2 className="text-2xl font-semibold text-midnight-100 mb-4">best practices</h2>
+          <section className="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">best practices</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-semibold text-midnight-100 mb-2">integration tips</h3>
-                <ul className="text-midnight-300 space-y-1">
+                <h3 className="font-semibold text-gray-900 mb-2">integration tips</h3>
+                <ul className="text-gray-600 space-y-1">
                   <li>• trigger surveys at natural reward moments</li>
                   <li>• match character personality to game theme</li>
                   <li>• keep surveys under 3 questions</li>
@@ -229,8 +229,8 @@ async function showRewardSurvey(playerId: string) {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-midnight-100 mb-2">optimization</h3>
-                <ul className="text-midnight-300 space-y-1">
+                <h3 className="font-semibold text-gray-900 mb-2">optimization</h3>
+                <ul className="text-gray-600 space-y-1">
                   <li>• cache audio files for better performance</li>
                   <li>• implement fallback for network issues</li>
                   <li>• track completion rates and adjust</li>

@@ -17,12 +17,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   ]
 
   return (
-    <div className="min-h-screen bg-midnight-900">
+    <div className="min-h-screen bg-white">
       <nav className="glass-effect sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <Lightbulb className="h-8 w-8 text-electric-400 neon-glow" />
+              <Lightbulb className="h-8 w-8 text-blue-500 neon-glow" />
               <span className="text-xl font-bold gradient-text">insight ai</span>
             </Link>
             
@@ -33,8 +33,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   to={path}
                   className={`nav-link flex items-center space-x-1 px-3 py-2 text-sm font-medium ${
                     location.pathname === path
-                      ? 'text-electric-400 active'
-                      : 'text-midnight-300 hover:text-electric-400'
+                      ? 'text-blue-600 active'
+                      : 'text-gray-600 hover:text-blue-600'
                   }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -48,14 +48,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       <main>{children}</main>
 
-      <footer className="bg-midnight-900 border-t border-midnight-700 text-midnight-200 py-12">
+      <footer className="bg-gray-50 border-t border-gray-200 text-gray-600 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <Lightbulb className="h-6 w-6 text-electric-400" />
+              <Lightbulb className="h-6 w-6 text-blue-500" />
               <span className="font-semibold">insight ai</span>
             </div>
-            <p className="text-sm text-midnight-400">
+            <p className="text-sm text-gray-500">
               revolutionizing game monetization through ai-powered surveys
             </p>
           </div>
