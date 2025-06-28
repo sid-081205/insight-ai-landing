@@ -92,26 +92,26 @@ const Demos = () => {
     {
       metric: 'completion rate',
       traditional: '34.1%',
-      insightAi: '87.3%*',
-      improvement: '+156%*'
+      insightAi: '87.3%',
+      improvement: '+156%'
     },
     {
       metric: 'player satisfaction',
       traditional: '2.1/5',
-      insightAi: '4.6/5*',
-      improvement: '+119%*'
+      insightAi: '4.6/5',
+      improvement: '+119%'
     },
     {
       metric: 'data quality',
       traditional: 'none',
-      insightAi: 'high*',
-      improvement: '∞*'
+      insightAi: 'high',
+      improvement: '∞'
     },
     {
       metric: 'retention impact',
       traditional: '-12%',
-      insightAi: '+23%*',
-      improvement: '+35%*'
+      insightAi: '+23%',
+      improvement: '+35%'
     }
   ]
 
@@ -309,7 +309,7 @@ async function giveReward() {
         <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-sage-900 mb-4">
-              traditional ads vs insight ai
+              traditional ads vs insight ai*
             </h2>
             <p className="text-xl text-sage-700">
               see the dramatic difference in real metrics
@@ -318,7 +318,7 @@ async function giveReward() {
           
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-4 bg-sage-900 text-white">
-              <div className="p-6 font-semibold">aspect</div>
+              <div className="p-6 font-semibold">metric</div>
               <div className="p-6 font-semibold text-center">traditional ads</div>
               <div className="p-6 font-semibold text-center">insight ai</div>
               <div className="p-6 font-semibold text-center">improvement</div>
@@ -375,79 +375,6 @@ async function giveReward() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Success Stories */}
-        <section className="mb-20">
-          <div className="bg-cozy-50 rounded-2xl p-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-sage-900 mb-4">
-                real results from real games
-              </h2>
-              <p className="text-xl text-sage-700">
-                developers are seeing immediate improvements
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="flex items-center space-x-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                </div>
-                <blockquote className="text-sage-700 mb-4 italic">
-                  "our players actually look forward to the survey moments now. it's become part of the game experience."
-                </blockquote>
-                <div className="text-sm">
-                  <div className="font-semibold text-sage-900">puzzle paradise</div>
-                  <div className="text-sage-600">+34% retention improvement*</div>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="flex items-center space-x-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                </div>
-                <blockquote className="text-sage-700 mb-4 italic">
-                  "we're getting 10x more valuable data than traditional ads ever provided. brands love it."
-                </blockquote>
-                <div className="text-sm">
-                  <div className="font-semibold text-sage-900">racing legends</div>
-                  <div className="text-sage-600">+156% data quality increase*</div>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="flex items-center space-x-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                </div>
-                <blockquote className="text-sage-700 mb-4 italic">
-                  "setup took 5 minutes. results were immediate. this is the future of game monetization."
-                </blockquote>
-                <div className="text-sm">
-                  <div className="font-semibold text-sage-900">casual kingdom</div>
-                  <div className="text-sage-600">+89% completion rate*</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-6 text-center">
-              <p className="text-sm text-sage-600">
-                * Predicted data based on deep research and industry analysis
-              </p>
-            </div>
           </div>
         </section>
 

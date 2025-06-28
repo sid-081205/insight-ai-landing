@@ -339,29 +339,6 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-
-            {/* Quick Stats */}
-            <div className="bg-gradient-to-r from-cozy-600 to-sage-600 rounded-2xl p-6 text-white">
-              <h3 className="text-xl font-semibold mb-4">join the community</h3>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span>developers using insight ai</span>
-                  <span className="font-bold">500+</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>surveys completed</span>
-                  <span className="font-bold">2.3m+</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>avg completion rate</span>
-                  <span className="font-bold">89.2%</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>player satisfaction</span>
-                  <span className="font-bold">4.8/5</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
