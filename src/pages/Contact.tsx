@@ -30,19 +30,19 @@ const Contact = () => {
           <h1 className="text-4xl font-bold gradient-text mb-4">
             get in touch
           </h1>
-          <p className="text-xl text-sage-700">
+          <p className="text-xl text-midnight-300">
             ready to revolutionize your game monetization? let's chat.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-semibold text-sage-900 mb-6">join the beta program</h2>
+          <div className="glass-effect rounded-2xl p-8">
+            <h2 className="text-2xl font-semibold text-midnight-100 mb-6">join the beta program</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-sage-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-midnight-300 mb-2">
                   your name
                 </label>
                 <input
@@ -51,13 +51,13 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-cozy-200 rounded-lg focus:ring-2 focus:ring-cozy-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-midnight-700 border border-midnight-600 rounded-lg focus:ring-2 focus:ring-electric-500 focus:border-transparent text-midnight-100"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-sage-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-midnight-300 mb-2">
                   email address
                 </label>
                 <input
@@ -66,13 +66,13 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-cozy-200 rounded-lg focus:ring-2 focus:ring-cozy-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-midnight-700 border border-midnight-600 rounded-lg focus:ring-2 focus:ring-electric-500 focus:border-transparent text-midnight-100"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-sage-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-medium text-midnight-300 mb-2">
                   company/studio
                 </label>
                 <input
@@ -81,12 +81,12 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-cozy-200 rounded-lg focus:ring-2 focus:ring-cozy-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-midnight-700 border border-midnight-600 rounded-lg focus:ring-2 focus:ring-electric-500 focus:border-transparent text-midnight-100"
                 />
               </div>
 
               <div>
-                <label htmlFor="gameType" className="block text-sm font-medium text-sage-700 mb-2">
+                <label htmlFor="gameType" className="block text-sm font-medium text-midnight-300 mb-2">
                   game type
                 </label>
                 <select
@@ -94,7 +94,7 @@ const Contact = () => {
                   name="gameType"
                   value={formData.gameType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-cozy-200 rounded-lg focus:ring-2 focus:ring-cozy-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-midnight-700 border border-midnight-600 rounded-lg focus:ring-2 focus:ring-electric-500 focus:border-transparent text-midnight-100"
                 >
                   <option value="">select game type</option>
                   <option value="puzzle">puzzle</option>
@@ -108,7 +108,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-sage-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-midnight-300 mb-2">
                   tell us about your project
                 </label>
                 <textarea
@@ -117,14 +117,14 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-cozy-200 rounded-lg focus:ring-2 focus:ring-cozy-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-midnight-700 border border-midnight-600 rounded-lg focus:ring-2 focus:ring-electric-500 focus:border-transparent text-midnight-100"
                   placeholder="what kind of game are you building? how many players do you have? what's your current monetization strategy?"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-cozy-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-cozy-700 transition-colors"
+                className="w-full bg-electric-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-electric-700 transition-colors neon-glow"
               >
                 join beta program
               </button>
@@ -133,59 +133,59 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-cozy-50 rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-sage-900 mb-6">why join our beta?</h3>
+            <div className="bg-midnight-800/50 rounded-2xl p-8">
+              <h3 className="text-xl font-semibold text-midnight-100 mb-6">why join our beta?</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <Users className="h-5 w-5 text-cozy-600 mt-1" />
+                  <Users className="h-5 w-5 text-electric-400 mt-1" />
                   <div>
-                    <div className="font-medium text-sage-900">early access</div>
-                    <div className="text-sage-700 text-sm">be among the first to integrate insight ai</div>
+                    <div className="font-medium text-midnight-100">early access</div>
+                    <div className="text-midnight-300 text-sm">be among the first to integrate insight ai</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MessageCircle className="h-5 w-5 text-cozy-600 mt-1" />
+                  <MessageCircle className="h-5 w-5 text-electric-400 mt-1" />
                   <div>
-                    <div className="font-medium text-sage-900">direct feedback</div>
-                    <div className="text-sage-700 text-sm">help shape the product with your input</div>
+                    <div className="font-medium text-midnight-100">direct feedback</div>
+                    <div className="text-midnight-300 text-sm">help shape the product with your input</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Calendar className="h-5 w-5 text-cozy-600 mt-1" />
+                  <Calendar className="h-5 w-5 text-electric-400 mt-1" />
                   <div>
-                    <div className="font-medium text-sage-900">free tier</div>
-                    <div className="text-sage-700 text-sm">extended free usage during beta period</div>
+                    <div className="font-medium text-midnight-100">free tier</div>
+                    <div className="text-midnight-300 text-sm">extended free usage during beta period</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-semibold text-sage-900 mb-6">get in touch directly</h3>
+            <div className="glass-effect rounded-2xl p-8">
+              <h3 className="text-xl font-semibold text-midnight-100 mb-6">get in touch directly</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-cozy-600" />
+                  <Mail className="h-5 w-5 text-electric-400" />
                   <div>
-                    <div className="font-medium text-sage-900">email us</div>
-                    <div className="text-sage-700">hello@insight-ai.com</div>
+                    <div className="font-medium text-midnight-100">email us</div>
+                    <div className="text-midnight-300">hello@insight-ai.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <MessageCircle className="h-5 w-5 text-cozy-600" />
+                  <MessageCircle className="h-5 w-5 text-electric-400" />
                   <div>
-                    <div className="font-medium text-sage-900">discord community</div>
-                    <div className="text-sage-700">join our developer community</div>
+                    <div className="font-medium text-midnight-100">discord community</div>
+                    <div className="text-midnight-300">join our developer community</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-cozy-600 to-sage-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-r from-electric-600 to-neon-600 rounded-2xl p-8 text-white">
               <h3 className="text-xl font-semibold mb-4">schedule a demo call</h3>
-              <p className="text-cozy-100 mb-6">
+              <p className="text-electric-100 mb-6">
                 want to see insight ai in action? book a 15-minute demo call with our team.
               </p>
-              <button className="bg-white text-cozy-600 px-6 py-3 rounded-lg font-semibold hover:bg-cozy-50 transition-colors">
+              <button className="bg-white text-electric-600 px-6 py-3 rounded-lg font-semibold hover:bg-electric-50 transition-colors neon-glow">
                 book demo call
               </button>
             </div>

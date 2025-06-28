@@ -10,13 +10,13 @@
 
 body {
   margin: 0;
-  background: #fef7f0;
-  color: #2d362d;
+  background: #0f172a;
+  color: #e2e8f0;
   line-height: 1.6;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #eb7944, #607560);
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -24,11 +24,14 @@ body {
 
 .stat-card {
   transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border: 1px solid #475569;
 }
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+  border-color: #60a5fa;
 }
 
 .nav-link {
@@ -43,7 +46,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #eb7944;
+  background: #60a5fa;
   transition: width 0.3s ease;
 }
 
@@ -55,16 +58,19 @@ body {
 .feature-card {
   transition: all 0.4s ease;
   border: 2px solid transparent;
+  background: linear-gradient(145deg, #1e293b, #334155);
 }
 
 .feature-card:hover {
-  border-color: #eb7944;
+  border-color: #60a5fa;
   transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 }
 
 .code-block {
-  background: #2d362d;
-  color: #fef7f0;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
   border-radius: 12px;
   padding: 1.5rem;
   font-family: 'JetBrains Mono', monospace;
@@ -74,9 +80,34 @@ body {
 .demo-card {
   transition: all 0.3s ease;
   cursor: pointer;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border: 1px solid #475569;
 }
 
 .demo-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+  border-color: #60a5fa;
+}
+
+.glass-effect {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+.option-button {
+  background: linear-gradient(145deg, #334155, #475569);
+  border: 1px solid #64748b;
+  transition: all 0.3s ease;
+}
+
+.option-button:hover {
+  background: linear-gradient(145deg, #475569, #64748b);
+  border-color: #60a5fa;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
 }
