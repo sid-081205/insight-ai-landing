@@ -287,7 +287,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {genZChallenges.map((challenge, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-lg border border-cozy-100">
                 <div className="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6 mx-auto">
@@ -300,29 +300,6 @@ const Home = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">traditional market research is failing</h3>
-            <p className="text-red-100 mb-6 max-w-3xl mx-auto">
-              companies like kantar, ipsos, and nielsen report declining response rates and data quality 
-              when surveying gen z. conventional methods feel outdated and intrusive to younger demographics 
-              who expect interactive, engaging experiences.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold text-red-200 mb-1">-47%</div>
-                <div className="text-sm text-red-100">survey response rates since 2019</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold text-red-200 mb-1">$12b</div>
-                <div className="text-sm text-red-100">lost annually to poor data quality</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold text-red-200 mb-1">68%</div>
-                <div className="text-sm text-red-100">of gen z find surveys boring</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
