@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Users, TrendingDown, Clock, Target, Zap, Shield, Brain, MessageCircle, Trophy, Star, CheckCircle, Volume2, Mic, Headphones, AlertTriangle, BarChart3, TrendingUp } from 'lucide-react'
+import { ArrowRight, Users, TrendingDown, Clock, Target, Zap, Shield, Brain, MessageCircle, Trophy, Star, CheckCircle, Volume2, Mic, Headphones, AlertTriangle, BarChart3, TrendingUp, Frown, Zap as ZapIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -53,28 +53,32 @@ const Home = () => {
 
   const genZChallenges = [
     {
-      icon: AlertTriangle,
+      icon: Frown,
       stat: '73%',
       label: 'of gen z ignore traditional surveys',
-      description: 'conventional market research fails to engage younger audiences'
+      description: 'conventional market research fails to engage younger audiences',
+      color: 'cozy'
     },
     {
-      icon: Clock,
+      icon: ZapIcon,
       stat: '8 sec',
       label: 'average attention span',
-      description: 'gen z attention spans are shorter than ever before'
+      description: 'gen z attention spans are shorter than ever before',
+      color: 'sage'
     },
     {
-      icon: BarChart3,
+      icon: TrendingDown,
       stat: '2.1x',
       label: 'higher skip rates for gen z',
-      description: 'younger demographics abandon surveys at much higher rates'
+      description: 'younger demographics abandon surveys at much higher rates',
+      color: 'cozy'
     },
     {
-      icon: TrendingUp,
+      icon: MessageCircle,
       stat: '89%',
       label: 'prefer interactive experiences',
-      description: 'gen z responds better to gamified, conversational formats'
+      description: 'gen z responds better to gamified, conversational formats',
+      color: 'sage'
     }
   ]
 
@@ -166,6 +170,56 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gen Z Market Research Challenge */}
+      <section className="py-16 bg-gradient-to-br from-cozy-50 via-sage-50 to-cozy-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sage-700 text-sm font-medium mb-6">
+              <AlertTriangle className="h-4 w-4 mr-2 text-cozy-600" />
+              market research crisis
+            </div>
+            <h2 className="text-4xl font-bold text-sage-900 mb-4">
+              the gen z feedback problem
+            </h2>
+            <p className="text-xl text-sage-700 max-w-3xl mx-auto">
+              market research giants like kantar struggle to gather authentic feedback from gen z, 
+              who ignore conventional surveys and have increasingly short attention spans
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {genZChallenges.map((challenge, index) => (
+              <div key={index} className="stat-card bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/50 hover:bg-white transition-all">
+                <div className={`flex items-center justify-center w-16 h-16 ${challenge.color === 'cozy' ? 'bg-cozy-100' : 'bg-sage-100'} rounded-full mb-6 mx-auto`}>
+                  <challenge.icon className={`h-8 w-8 ${challenge.color === 'cozy' ? 'text-cozy-600' : 'text-sage-600'}`} />
+                </div>
+                <div className="text-center">
+                  <div className={`text-3xl font-bold mb-2 ${challenge.color === 'cozy' ? 'text-cozy-600' : 'text-sage-600'}`}>
+                    {challenge.stat}
+                  </div>
+                  <div className="text-lg font-semibold text-sage-900 mb-2">{challenge.label}</div>
+                  <p className="text-sm text-sage-600">{challenge.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Fun insight callout */}
+          <div className="mt-12 bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-sage-900 mb-4">
+                the solution? meet them where they are
+              </h3>
+              <p className="text-lg text-sage-700 max-w-2xl mx-auto">
+                instead of forcing gen z into boring surveys, insight ai brings market research 
+                into their favorite environment: games. the result? authentic feedback through 
+                engaging conversations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -268,36 +322,6 @@ const Home = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gen Z Market Research Challenge */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-sage-900 mb-4">
-              the gen z feedback crisis
-            </h2>
-            <p className="text-xl text-sage-700 max-w-3xl mx-auto">
-              market research giants like kantar struggle to gather authentic feedback from gen z, 
-              who ignore conventional surveys and have increasingly short attention spans
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {genZChallenges.map((challenge, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg border border-cozy-100">
-                <div className="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6 mx-auto">
-                  <challenge.icon className="h-8 w-8 text-red-600" />
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">{challenge.stat}</div>
-                  <div className="text-lg font-semibold text-sage-900 mb-2">{challenge.label}</div>
-                  <p className="text-sm text-sage-600">{challenge.description}</p>
-                </div>
               </div>
             ))}
           </div>
