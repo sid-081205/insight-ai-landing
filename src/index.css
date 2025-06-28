@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: lowercase;
+}
+
+body {
+  margin: 0;
+  background: #fef7f0;
+  color: #2d362d;
+  line-height: 1.6;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #eb7944, #607560);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-card {
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #eb7944;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.feature-card {
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  border-color: #eb7944;
+  transform: scale(1.02);
+}
+
+.code-block {
+  background: #2d362d;
+  color: #fef7f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  overflow-x: auto;
+}
+
+.demo-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.demo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
