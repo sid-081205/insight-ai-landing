@@ -53,8 +53,8 @@ const Contact = () => {
     },
     {
       icon: Calendar,
-      title: 'extended free tier',
-      description: '3 months of pro features free during beta period'
+      title: 'community access',
+      description: 'join our discord community of game developers'
     },
     {
       icon: CheckCircle,
@@ -94,12 +94,12 @@ const Contact = () => {
       answer: 'we only collect survey responses and basic engagement metrics. all data is anonymized and gdpr compliant. players always know what data is being collected.'
     },
     {
-      question: 'how much does it cost?',
-      answer: 'we offer 1,000 free surveys per month. paid plans start at $49/month for 25,000 surveys. enterprise pricing available for larger studios.'
+      question: 'is insight ai really free?',
+      answer: 'yes! insight ai is completely free with unlimited surveys. we believe in making better monetization accessible to all developers.'
     },
     {
       question: 'can i customize the ai characters?',
-      answer: 'yes! pro and enterprise plans include custom character creation, voice selection, and personality customization to match your game\'s theme.'
+      answer: 'absolutely! you can customize character personalities, voices, and conversation styles to match your game\'s theme and tone.'
     }
   ]
 
@@ -112,10 +112,10 @@ const Contact = () => {
               <CheckCircle className="h-8 w-8 text-green-600" />
             </div>
             <h1 className="text-3xl font-bold text-sage-900 mb-4">
-              thanks for joining the beta!
+              thanks for reaching out!
             </h1>
             <p className="text-lg text-sage-700 mb-8">
-              we've received your application and will be in touch within 24 hours with your api key and setup instructions.
+              we've received your message and will be in touch within 24 hours with your api key and setup instructions.
             </p>
             <div className="space-y-4">
               <div className="bg-cozy-50 p-4 rounded-lg">
@@ -123,8 +123,8 @@ const Contact = () => {
                 <ul className="text-sm text-sage-700 space-y-1">
                   <li>• you'll receive your api key via email</li>
                   <li>• access to our private discord community</li>
-                  <li>• invitation to our weekly beta feedback calls</li>
-                  <li>• 3 months of pro features free</li>
+                  <li>• invitation to our weekly developer calls</li>
+                  <li>• complete documentation and examples</li>
                 </ul>
               </div>
               <button 
@@ -146,10 +146,10 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold gradient-text mb-4">
-            join the beta program
+            get started with insight ai
           </h1>
           <p className="text-xl text-sage-700 max-w-3xl mx-auto">
-            ready to revolutionize your game monetization? join 500+ developers already using insight ai to create better player experiences.
+            ready to revolutionize your game monetization? join developers already using insight ai to create better player experiences.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-cozy-100">
-              <h2 className="text-2xl font-semibold text-sage-900 mb-6">get early access</h2>
+              <h2 className="text-2xl font-semibold text-sage-900 mb-6">get your api key</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -298,7 +298,7 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-cozy-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-cozy-700 transition-all transform hover:scale-105 flex items-center justify-center"
                 >
-                  join beta program
+                  get started free
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
               </form>
@@ -307,9 +307,9 @@ const Contact = () => {
 
           {/* Sidebar */}
           <div className="space-y-8">
-            {/* Beta Benefits */}
+            {/* Benefits */}
             <div className="bg-cozy-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-sage-900 mb-6">beta program benefits</h3>
+              <h3 className="text-xl font-semibold text-sage-900 mb-6">what you get</h3>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-3">
@@ -345,7 +345,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">join the community</h3>
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span>developers in beta</span>
+                  <span>developers using insight ai</span>
                   <span className="font-bold">500+</span>
                 </div>
                 <div className="flex items-center justify-between">
@@ -402,7 +402,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center space-x-1">
                 <CheckCircle className="h-4 w-4" />
-                <span>1,000 free surveys</span>
+                <span>completely free</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Users className="h-4 w-4" />

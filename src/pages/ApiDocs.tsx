@@ -14,8 +14,8 @@ const ApiDocs = () => {
     {
       step: 1,
       title: 'get your api key',
-      description: 'sign up and get your free api key from the dashboard',
-      action: 'sign up for free'
+      description: 'sign up and get your api key from the dashboard',
+      action: 'sign up free'
     },
     {
       step: 2,
@@ -286,7 +286,7 @@ curl -X POST https://api.insight-ai.com/v1/survey/start \\
               <h2 className="text-2xl font-semibold text-sage-900">authentication</h2>
             </div>
             <p className="text-sage-700 mb-6">
-              all api requests require an api key in the authorization header. get your free key from the dashboard.
+              all api requests require an api key in the authorization header. get your key from the dashboard.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div>
@@ -543,53 +543,6 @@ response:
   }
 }`}</pre>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Rate Limits & Pricing */}
-        <section className="mb-16">
-          <div className="bg-cozy-50 rounded-2xl p-8">
-            <h2 className="text-2xl font-semibold text-sage-900 mb-6">pricing & limits</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-semibold text-sage-900 mb-4">free tier</h3>
-                <div className="text-3xl font-bold text-cozy-600 mb-2">$0</div>
-                <ul className="text-sage-700 space-y-2 text-sm">
-                  <li>• 1,000 surveys/month</li>
-                  <li>• basic ai characters</li>
-                  <li>• standard voice synthesis</li>
-                  <li>• email support</li>
-                  <li>• basic analytics</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm border-2 border-cozy-600">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-semibold text-sage-900">pro tier</h3>
-                  <span className="bg-cozy-600 text-white px-2 py-1 rounded text-xs">popular</span>
-                </div>
-                <div className="text-3xl font-bold text-cozy-600 mb-2">$49<span className="text-lg text-sage-600">/mo</span></div>
-                <ul className="text-sage-700 space-y-2 text-sm">
-                  <li>• 25,000 surveys/month</li>
-                  <li>• custom ai characters</li>
-                  <li>• premium voice options</li>
-                  <li>• priority support</li>
-                  <li>• advanced analytics</li>
-                  <li>• a/b testing</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-semibold text-sage-900 mb-4">enterprise</h3>
-                <div className="text-3xl font-bold text-cozy-600 mb-2">custom</div>
-                <ul className="text-sage-700 space-y-2 text-sm">
-                  <li>• unlimited surveys</li>
-                  <li>• white-label solution</li>
-                  <li>• dedicated support</li>
-                  <li>• custom integrations</li>
-                  <li>• sla guarantees</li>
-                  <li>• on-premise options</li>
-                </ul>
               </div>
             </div>
           </div>

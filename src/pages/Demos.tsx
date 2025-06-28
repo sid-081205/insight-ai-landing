@@ -90,28 +90,28 @@ const Demos = () => {
 
   const comparisonData = [
     {
-      aspect: 'user experience',
-      traditional: 'forced 30s video ad',
-      insightAi: 'engaging 25s conversation',
-      improvement: 'more enjoyable'
-    },
-    {
-      aspect: 'completion rate',
+      metric: 'completion rate',
       traditional: '34.1%',
-      insightAi: '89.2%',
-      improvement: '+162%'
+      insightAi: '87.3%*',
+      improvement: '+156%*'
     },
     {
-      aspect: 'data collected',
+      metric: 'player satisfaction',
+      traditional: '2.1/5',
+      insightAi: '4.6/5*',
+      improvement: '+119%*'
+    },
+    {
+      metric: 'data quality',
       traditional: 'none',
-      insightAi: 'rich insights',
-      improvement: 'invaluable'
+      insightAi: 'high*',
+      improvement: '∞*'
     },
     {
-      aspect: 'player retention',
-      traditional: 'decreases',
-      insightAi: 'increases',
-      improvement: '+23%'
+      metric: 'retention impact',
+      traditional: '-12%',
+      insightAi: '+23%*',
+      improvement: '+35%*'
     }
   ]
 
@@ -325,12 +325,18 @@ async function giveReward() {
             </div>
             {comparisonData.map((row, index) => (
               <div key={index} className={`grid grid-cols-4 ${index % 2 === 0 ? 'bg-cozy-50' : 'bg-white'}`}>
-                <div className="p-6 font-medium text-sage-900">{row.aspect}</div>
+                <div className="p-6 font-medium text-sage-900">{row.metric}</div>
                 <div className="p-6 text-center text-red-600">{row.traditional}</div>
                 <div className="p-6 text-center text-cozy-600 font-semibold">{row.insightAi}</div>
                 <div className="p-6 text-center text-green-600 font-bold">{row.improvement}</div>
               </div>
             ))}
+          </div>
+          
+          <div className="mt-4 text-center">
+            <p className="text-sm text-sage-600">
+              * Predicted data based on deep research and industry analysis
+            </p>
           </div>
         </section>
 
@@ -398,7 +404,7 @@ async function giveReward() {
                 </blockquote>
                 <div className="text-sm">
                   <div className="font-semibold text-sage-900">puzzle paradise</div>
-                  <div className="text-sage-600">+34% retention improvement</div>
+                  <div className="text-sage-600">+34% retention improvement*</div>
                 </div>
               </div>
               
@@ -415,7 +421,7 @@ async function giveReward() {
                 </blockquote>
                 <div className="text-sm">
                   <div className="font-semibold text-sage-900">racing legends</div>
-                  <div className="text-sage-600">+156% data quality increase</div>
+                  <div className="text-sage-600">+156% data quality increase*</div>
                 </div>
               </div>
               
@@ -432,9 +438,15 @@ async function giveReward() {
                 </blockquote>
                 <div className="text-sm">
                   <div className="font-semibold text-sage-900">casual kingdom</div>
-                  <div className="text-sage-600">+89% completion rate</div>
+                  <div className="text-sage-600">+89% completion rate*</div>
                 </div>
               </div>
+            </div>
+            
+            <div className="mt-6 text-center">
+              <p className="text-sm text-sage-600">
+                * Predicted data based on deep research and industry analysis
+              </p>
             </div>
           </div>
         </section>
@@ -446,11 +458,11 @@ async function giveReward() {
               ready to see these results in your game?
             </h2>
             <p className="text-xl text-cozy-100 mb-8">
-              start your free trial today and experience the difference
+              start using insight ai today and experience the difference
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="inline-flex items-center px-8 py-4 bg-white text-cozy-600 rounded-lg font-semibold hover:bg-cozy-50 transition-all transform hover:scale-105">
-                start free trial
+                get started free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
               <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
@@ -458,7 +470,7 @@ async function giveReward() {
               </button>
             </div>
             <p className="text-sm text-cozy-200 mt-4">
-              1,000 free surveys • no credit card required
+              completely free • unlimited surveys • no setup fees
             </p>
           </div>
         </section>

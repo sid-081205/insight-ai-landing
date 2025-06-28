@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Users, TrendingDown, Clock, Target, Zap, Shield, Brain, MessageCircle, Trophy, Star, CheckCircle } from 'lucide-react'
+import { ArrowRight, Users, TrendingDown, Clock, Target, Zap, Shield, Brain, MessageCircle, Trophy, Star, CheckCircle, Volume2, Mic, Headphones } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -51,51 +51,24 @@ const Home = () => {
     }
   ]
 
-  const testimonials = [
+  const elevenLabsFeatures = [
     {
-      quote: "our retention improved by 23% after switching from video ads to insight ai surveys. players actually enjoy the interactions!",
-      author: "sarah chen",
-      role: "lead game designer",
-      company: "puzzle studios"
+      icon: Volume2,
+      title: 'ultra-realistic voices',
+      description: 'elevenlabs\' cutting-edge ai generates voices so natural, players forget they\'re talking to ai',
+      details: ['29 languages supported', 'emotional voice modulation', 'real-time generation']
     },
     {
-      quote: "finally, a way to monetize that doesn't annoy our players. the ai characters feel like part of our game world.",
-      author: "marcus rodriguez",
-      role: "ceo",
-      company: "indie games collective"
+      icon: Mic,
+      title: 'custom character voices',
+      description: 'create unique voice personalities for each ai character that match your game\'s theme',
+      details: ['voice cloning technology', 'personality-matched tones', 'consistent character identity']
     },
     {
-      quote: "we're getting 10x more valuable data than traditional ads ever provided. brands love the authentic feedback.",
-      author: "emily watson",
-      role: "monetization director",
-      company: "mobile gaming corp"
-    }
-  ]
-
-  const comparisonData = [
-    {
-      metric: 'completion rate',
-      traditional: '34.1%',
-      insightAi: '87.3%',
-      improvement: '+156%'
-    },
-    {
-      metric: 'player satisfaction',
-      traditional: '2.1/5',
-      insightAi: '4.6/5',
-      improvement: '+119%'
-    },
-    {
-      metric: 'data quality',
-      traditional: 'none',
-      insightAi: 'high',
-      improvement: '∞'
-    },
-    {
-      metric: 'retention impact',
-      traditional: '-12%',
-      insightAi: '+23%',
-      improvement: '+35%'
+      icon: Headphones,
+      title: 'immersive audio experience',
+      description: 'high-quality audio that makes survey interactions feel like natural game dialogue',
+      details: ['studio-quality output', 'adaptive speech patterns', 'contextual responses']
     }
   ]
 
@@ -108,7 +81,7 @@ const Home = () => {
           <div className="text-center space-y-8">
             <div className="inline-flex items-center px-4 py-2 bg-cozy-100 rounded-full text-cozy-700 text-sm font-medium mb-4">
               <Star className="h-4 w-4 mr-2" />
-              trusted by 500+ game developers
+              powered by elevenlabs ai voices
             </div>
             <h1 className="text-5xl md:text-7xl font-bold gradient-text leading-tight">
               replace ads with<br />
@@ -124,7 +97,7 @@ const Home = () => {
                 to="/api"
                 className="inline-flex items-center px-8 py-4 bg-cozy-600 text-white rounded-lg font-semibold hover:bg-cozy-700 transition-all transform hover:scale-105"
               >
-                start free trial
+                get started free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
@@ -135,21 +108,8 @@ const Home = () => {
               </Link>
             </div>
             <p className="text-sm text-sage-600">
-              no credit card required • 1,000 free surveys/month
+              completely free • unlimited surveys • no setup fees
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="py-8 bg-white/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sage-600 mb-8">trusted by leading game studios</p>
-          <div className="flex justify-center items-center space-x-12 opacity-60">
-            <div className="text-2xl font-bold text-sage-400">puzzle studios</div>
-            <div className="text-2xl font-bold text-sage-400">indie collective</div>
-            <div className="text-2xl font-bold text-sage-400">mobile corp</div>
-            <div className="text-2xl font-bold text-sage-400">game labs</div>
           </div>
         </div>
       </section>
@@ -218,6 +178,7 @@ const Home = () => {
                   <div className="flex items-center space-x-2 mb-2">
                     <MessageCircle className="h-4 w-4" />
                     <span className="font-medium">zara the wise owl</span>
+                    <Volume2 className="h-3 w-3 text-cozy-200" />
                   </div>
                   <p className="text-sm">"hey there, adventurer! before i give you those coins, mind helping me with a quick question?"</p>
                 </div>
@@ -232,6 +193,7 @@ const Home = () => {
                   <div className="flex items-center space-x-2 mb-2">
                     <MessageCircle className="h-4 w-4" />
                     <span className="font-medium">zara</span>
+                    <Volume2 className="h-3 w-3 text-cozy-200" />
                   </div>
                   <p className="text-sm">"what's your favorite type of mobile game? puzzle, action, or strategy?"</p>
                 </div>
@@ -247,37 +209,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-sage-900 mb-4">
-              traditional ads vs insight ai
-            </h2>
-            <p className="text-xl text-sage-700">
-              see the dramatic difference in performance
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="grid grid-cols-4 bg-sage-900 text-white">
-              <div className="p-6 font-semibold">metric</div>
-              <div className="p-6 font-semibold text-center">traditional ads</div>
-              <div className="p-6 font-semibold text-center">insight ai</div>
-              <div className="p-6 font-semibold text-center">improvement</div>
-            </div>
-            {comparisonData.map((row, index) => (
-              <div key={index} className={`grid grid-cols-4 ${index % 2 === 0 ? 'bg-cozy-50' : 'bg-white'}`}>
-                <div className="p-6 font-medium text-sage-900">{row.metric}</div>
-                <div className="p-6 text-center text-sage-600">{row.traditional}</div>
-                <div className="p-6 text-center text-cozy-600 font-semibold">{row.insightAi}</div>
-                <div className="p-6 text-center text-green-600 font-bold">{row.improvement}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -316,36 +247,102 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* ElevenLabs Integration */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-sage-900 mb-4">
-              loved by game developers
+              powered by elevenlabs voice ai
             </h2>
             <p className="text-xl text-sage-700">
-              hear from studios already using insight ai
+              the most advanced voice synthesis technology brings your ai characters to life
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {elevenLabsFeatures.map((feature, index) => (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg border border-cozy-100">
+                <div className="flex items-center justify-center w-16 h-16 bg-cozy-100 rounded-full mb-6">
+                  <feature.icon className="h-8 w-8 text-cozy-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-sage-900 mb-4">{feature.title}</h3>
+                <p className="text-sage-700 mb-6">{feature.description}</p>
+                <ul className="space-y-2">
+                  {feature.details.map((detail, idx) => (
+                    <li key={idx} className="flex items-center text-sm text-sage-600">
+                      <CheckCircle className="h-4 w-4 text-cozy-600 mr-2 flex-shrink-0" />
+                      {detail}
+                    </li>
                   ))}
-                </div>
-                <blockquote className="text-sage-700 mb-6 italic">
-                  "{testimonial.quote}"
-                </blockquote>
-                <div>
-                  <div className="font-semibold text-sage-900">{testimonial.author}</div>
-                  <div className="text-sm text-sage-600">{testimonial.role}</div>
-                  <div className="text-sm text-cozy-600">{testimonial.company}</div>
-                </div>
+                </ul>
               </div>
             ))}
+          </div>
+
+          {/* ElevenLabs Demo */}
+          <div className="bg-gradient-to-r from-cozy-600 to-sage-600 rounded-2xl p-8 text-white">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">hear the difference</h3>
+                <p className="text-cozy-100 mb-6">
+                  elevenlabs' neural voice synthesis creates characters that sound completely human. 
+                  players engage naturally because the voices feel real and emotionally authentic.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
+                    <span className="text-cozy-100">emotional range and expression</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
+                    <span className="text-cozy-100">contextual speech patterns</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
+                    <span className="text-cozy-100">real-time voice generation</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-cozy-300 rounded-full"></div>
+                    <span className="text-cozy-100">multilingual support</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-center mb-4">
+                  <h4 className="font-semibold text-lg mb-2">sample character voices</h4>
+                  <p className="text-sm text-cozy-200">click to hear elevenlabs ai in action</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
+                    <div>
+                      <div className="font-medium">zara the wise owl</div>
+                      <div className="text-sm text-cozy-200">warm, knowledgeable guide</div>
+                    </div>
+                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
+                      <Volume2 className="h-5 w-5" />
+                    </button>
+                  </div>
+                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
+                    <div>
+                      <div className="font-medium">max the mechanic</div>
+                      <div className="text-sm text-cozy-200">energetic, helpful expert</div>
+                    </div>
+                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
+                      <Volume2 className="h-5 w-5" />
+                    </button>
+                  </div>
+                  <div className="bg-white/20 p-4 rounded-lg flex items-center justify-between">
+                    <div>
+                      <div className="font-medium">luna the fairy</div>
+                      <div className="text-sm text-cozy-200">playful, magical companion</div>
+                    </div>
+                    <button className="bg-white/20 hover:bg-white/30 p-2 rounded-full transition-colors">
+                      <Volume2 className="h-5 w-5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -357,25 +354,25 @@ const Home = () => {
             ready to revolutionize your game monetization?
           </h2>
           <p className="text-xl text-cozy-100 mb-8">
-            join 500+ developers already using insight ai to create better player experiences
+            join developers already using insight ai to create better player experiences
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Link
               to="/contact"
               className="inline-flex items-center px-8 py-4 bg-white text-cozy-600 rounded-lg font-semibold hover:bg-cozy-50 transition-all transform hover:scale-105"
             >
-              start free trial
+              get started free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/demos"
               className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
             >
-              book demo call
+              see live demos
             </Link>
           </div>
           <p className="text-sm text-cozy-200">
-            1,000 free surveys • no setup fees • cancel anytime
+            completely free • unlimited surveys • no setup fees
           </p>
         </div>
       </section>
