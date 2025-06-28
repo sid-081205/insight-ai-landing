@@ -104,9 +104,9 @@ const Home = () => {
   ]
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-12">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 relative overflow-hidden">
+      <section className="pt-20 pb-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cozy-50 via-white to-sage-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
@@ -146,9 +146,9 @@ const Home = () => {
       </section>
 
       {/* Problem Statistics */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-sage-900 mb-4">
               the mobile game ad crisis
             </h2>
@@ -175,9 +175,9 @@ const Home = () => {
       </section>
 
       {/* Gen Z Market Research Challenge */}
-      <section className="py-16 bg-gradient-to-br from-cozy-50 via-sage-50 to-cozy-50">
+      <section className="py-12 bg-gradient-to-br from-cozy-50 via-sage-50 to-cozy-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sage-700 text-sm font-medium mb-6">
               <AlertTriangle className="h-4 w-4 mr-2 text-cozy-600" />
               market research crisis
@@ -209,7 +209,7 @@ const Home = () => {
           </div>
           
           {/* Fun insight callout */}
-          <div className="mt-12 bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50">
+          <div className="mt-8 bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-sage-900 mb-4">
                 the solution? meet them where they are
@@ -225,7 +225,7 @@ const Home = () => {
       </section>
 
       {/* Solution Overview */}
-      <section className="py-16 bg-gradient-to-r from-sage-900 to-cozy-900 text-white">
+      <section className="py-12 bg-gradient-to-r from-sage-900 to-cozy-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -295,9 +295,9 @@ const Home = () => {
       </section>
 
       {/* Features */}
-      <section className="py-16 bg-cozy-50">
+      <section className="py-12 bg-cozy-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-sage-900 mb-4">
               why choose insight ai?
             </h2>
@@ -329,9 +329,9 @@ const Home = () => {
       </section>
 
       {/* ElevenLabs Integration */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-sage-900 mb-4">
               powered by elevenlabs voice ai
             </h2>
@@ -340,7 +340,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {elevenLabsFeatures.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-lg border border-cozy-100">
                 <div className="flex items-center justify-center w-16 h-16 bg-cozy-100 rounded-full mb-6">
@@ -391,7 +391,7 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-cozy-600 to-sage-600">
+      <section className="py-16 bg-gradient-to-r from-cozy-600 to-sage-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
             ready to revolutionize your game monetization?
