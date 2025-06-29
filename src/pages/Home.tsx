@@ -115,8 +115,7 @@ const Home = () => {
               powered by elevenlabs ai voices
             </div>
             <h1 className="text-5xl md:text-7xl font-bold gradient-text leading-tight">
-              replace ads with<br />
-              ai conversations
+              replace ads with intelligent surveys
             </h1>
             <p className="text-xl md:text-2xl text-sage-700 max-w-3xl mx-auto">
               turn reward moments into engaging survey experiences. 
