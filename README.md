@@ -5,7 +5,7 @@ a landing page for insight ai - the platform that replaces traditional mobile ga
 ## what it is
 
 <!-- Demo video embed -->
-<video src="InsightAI Landing Page.mp4" controls width="700" style="margin-bottom: 1.5rem;"></video>
+<video src="final landing page.mp4" controls width="700" style="margin-bottom: 1.5rem;"></video>
 
 - **the problem**: mobile game ads suck. 65.9% skip rate, terrible ux, zero insights, genz doesn't like conventional surveys, need better ways to collected data
 - **the solution**: ai characters conduct brief surveys instead of showing ads
