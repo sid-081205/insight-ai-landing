@@ -4,12 +4,7 @@ a landing page for insight ai - the platform that replaces traditional mobile ga
 
 ## what it is
 
-<!-- Demo video embed -->
-<<<<<<< HEAD
-<video src="/Users/siddharthgianchandani/vscode projects/eleven-hack-landing/final landing page.mp4" controls width="700" style="margin-bottom: 1.5rem;"></video>
-=======
-<video src="final landing page.mp4" controls width="700" style="margin-bottom: 1.5rem;"></video>
->>>>>>> b13a3fdaf4054dfb013b9f65991ae51b534a803a
+check out website (with bg music): https://drive.google.com/file/d/1CCgiL2asMwgh_9SHBPCWHZJ79BfjFS_0/view?usp=sharing
 
 - **the problem**: mobile game ads suck. 65.9% skip rate, terrible ux, zero insights, genz doesn't like conventional surveys, need better ways to collected data
 - **the solution**: ai characters conduct brief surveys instead of showing ads
