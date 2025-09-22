@@ -10,7 +10,7 @@ check out website (with bg music): https://drive.google.com/file/d/1CCgiL2asMwgh
 - **the solution**: ai characters conduct brief surveys instead of showing ads
 - **result**: players get rewards, brands get data, devs get better retention
 
-## tech stack
+## tech 
 
 - react + typescript
 - tailwind css for styling
@@ -18,7 +18,7 @@ check out website (with bg music): https://drive.google.com/file/d/1CCgiL2asMwgh
 - react router for navigation
 - lucide icons
 
-## local development
+## running the website
 
 ```bash
 # install dependencies
@@ -31,25 +31,4 @@ npm run dev
 npm run build
 ```
 
-## deployment
-
-### netlify (recommended)
-1. connect your repo to netlify
-2. build command: `npm run build`
-3. publish directory: `dist`
-4. deploy
-
-### vercel
-1. import project to vercel
-2. framework preset: vite
-3. build command: `npm run build`
-4. output directory: `dist`
-5. deploy
-
-### manual static hosting
-```bash
-npm run build
-# upload dist/ folder to any static host
-```
-
-built for developers who want better monetization without annoying their players. not building further atm but open to ideas - esp. game devs
+built for developers who want better monetization without annoying their players. building further and open to ideas - esp. game devs
